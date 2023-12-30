@@ -1,6 +1,6 @@
 {
   "name": "pre-cook-backend",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "npx scaffolding tool for no-code-backend npm package",
   "main": "index.js",
   "scripts": {
