@@ -7,14 +7,14 @@ const path = require("node:path");
 console.log("chef at work...");
 
 execSync(`npm init -y`);
-execSync(`npm i no-code-backend`);
+execSync(`npm i no-code-backend@latest`);
 
 const configTempPath = path.join(__dirname, "template", "serverConfigTemplate.json");
 const configTemp = fs.readFileSync(configTempPath, "utf-8");
 fs.writeFileSync("serverConfig.json", configTemp);
 
 const indexTempPath = path.join(__dirname, "template", "indexTemplate.js");
-const indexTemp = fs.readFileSync(configTempPath, "utf-8");
+const indexTemp = fs.readFileSync(indexTempPath, "utf-8");
 fs.writeFileSync("index.js", indexTemp);
 
 console.log("hot and ready to serve");
