@@ -17,7 +17,7 @@ const indexTempPath = path.join(__dirname, "template", "indexTemplate.js");
 const indexTemp = fs.readFileSync(indexTempPath, "utf-8");
 fs.writeFileSync("index.js", indexTemp);
 
-const packageJson = require("package.json");
+const packageJson = require("./package.json");
 if (!packageJson.scripts) {
     packageJson.scripts = {};
 }
