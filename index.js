@@ -15,6 +15,6 @@ fs.writeFileSync("serverConfig.json", configTemp);
 
 const indexTempPath = path.join(__dirname, "template", "indexTemplate.js");
 const indexTemp = fs.readFileSync(configTempPath, "utf-8");
-fs.writeFileSync("index.js", configTemp);
+fs.writeFileSync("index.js", indexTemp);
 
 console.log("hot and ready to serve");
